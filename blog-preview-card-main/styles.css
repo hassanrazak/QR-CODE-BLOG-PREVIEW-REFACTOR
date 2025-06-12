@@ -42,12 +42,12 @@ h1 {
   justify-content: start;
 }
 
-.qr-code-section {
+.blog-section {
   margin-left: 110px;
   width: 75%;
 }
 
-.qr-code {
+.blog {
   width: 100%;
   height: 100%;
   border-top: 15px solid #000;
@@ -88,4 +88,8 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+}
+
+.blog-image:hover {
+  transform: translateY(-10px);
 }

@@ -17,7 +17,7 @@
     <main class="container-fluid bg-custom-light min-vh-100 py-5">
       <div class="row">
         <div
-          class="col-lg-8 bg-white min-vh-100 d-flex flex-column p-5 mt-5"
+          class="col-lg-8 bg-white d-flex flex-column p-5 mt-5"
           style="border-top-right-radius: 50px; position: relative"
         >
           <section
@@ -52,23 +52,25 @@
               </a>
             </p>
           </section>
-          <section
-            class="qr-code-container bg-custom-light d-flex justify-content-center align-items-center mt-4 flex-grow-1"
-            style="
-              border-top: 15px solid #000;
-              border-left: 15px solid #000;
-              border-right: 15px solid #000;
-              border-top-left-radius: 20px;
-              border-top-right-radius: 20px;
-            "
-          >
-            <img
-              src="design/desktop-design.jpg"
-              alt="QR code for Frontend Mentor"
-              class="img-fluid"
-              style="max-height: 600px"
-            />
-          </section>
+      <section
+  class="flex-grow-1 d-flex justify-content-center align-items-center mt-4"
+  style="
+    border-top: 15px solid #000;
+    border-left: 15px solid #000;
+    border-right: 15px solid #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #d5e1ef;
+    min-height: 0;
+  "
+>
+  <img
+    src="design/desktop-design.jpg"
+    alt="QR code for Frontend Mentor"
+    class="img-fluid"
+    style="max-height: 100%; object-fit: contain;"
+  />
+</section>
         </div>
 
         <div
@@ -91,7 +93,7 @@
               </p>
             </div>
           </div>
-         
+
           <hr class="my-3 border-secondary" />
 
           <div>

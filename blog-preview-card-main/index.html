@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Blog preview card</title>
 
- <link rel="stylesheet" href="styles.css" />
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-   <main class="container">
-      <div id="left-card">
-        <section id="logo-section">
-          <img
-            src="assets/Group 357.png"
-            
-          />
-        </section>
-        <section class="main-content-section">
-          <h1>Blog preview card</h1>
-          <p class="description">
-            This is a Figma design file for a Frontend Mentor challenege. Figma
-            is a <br />
-            desgin tool professionals use to collaborate on projects. Need help
-            <br />
-            using Figma?
-            <a
-              href="https://www.frontendmentor.io/articles/figma-for-developers-how-to-work-with-a-design-file-m6CZKZ1rC1"
-              style="font-weight: bold; text-decoration: underline"
-            >
-              Read our Figma for developers article
-            </a>
-          </p>
-        </section>
-        <section class="blog-section">
-          <section class="blog">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main
+      class="container-fluid bg-custom-light min-vh-100 py-5 overflow-hidden px-0"
+    >
+      <div class="row g-0">
+        <!-- LEFT CARD -->
+        <div
+          class="col-lg-8 bg-white d-flex flex-column p-5 mt-5"
+          style="border-top-right-radius: 50px; position: relative"
+        >
+          <!-- Logo Section -->
+          <section
+            class="mb-4 d-flex justify-content-start"
+            style="position: absolute; top: -72px; left: 20px"
+          >
             <img
-            class="blog-image"
-              src="design/desktop-design.jpg"
-              alt="QR code for frontend mentor"
-              style="height: auto; width: 100%; transition: transform 0.3s ease-in-out"
+              src="assets/Group 357.png"
+              alt="Frontend Mentor logo"
+              class="rounded-circle img-fluid"
+              style="width: 144px; height: 144px; object-fit: cover"
             />
           </section>
-        </section>
-      </div>
 
-      <div id="right-card">
-        <div class="right-card-section">
-          <img src="assets/circular.svg" alt="circular design" />
-          <section class="right-card-section-text">
-            <h2>Design System &rarr;</h2>
-            <p>
-              The design system contains all the information for<br />
-              reusable components and styles. It shows colors,<br />
-              typography styles, and components, including various<br />
-              component states if they're interactive.
+          <!-- Main Content -->
+          <section class="mb-4 pt-5">
+            <h1 class="h3 mb-3">Blog preview card</h1>
+            <p class="text-muted">
+              This is a Figma design file for a Frontend Mentor challenge. Figma
+              is a design tool professionals use to collaborate on projects.
+              Need help using Figma?
+              <a
+                href="https://www.frontendmentor.io/articles/figma-for-developers-how-to-work-with-a-design-file-m6CZKZ1rC1"
+                class="fw-bold text-decoration-underline"
+              >
+                Read our Figma for developers article </a
+              >.
             </p>
           </section>
-        </div>
-        <div style="border:1px solid rgb(172, 168, 168); width:100%">
-          <div></div>
-        </div>
-        <div class="right-card-section">
-          <img src="assets/design.svg" alt="sqaure design" />
-          <section class="right-card-section-text">
-            <h2>Designs &rarr;</h2>
-            <p>
-              The high-fidelity designs help you build responsive,<br />
-              accessible projects. Aim for precision rather than pixel-<br />
-              perfect replicas. For guidance, see Josh Comeau's<br />
-              "Chasing the Pixel-Perfect Dream."
-            </p>
+
+          <!-- Blog Image Section -->
+          <section
+            class="flex-grow-1 d-flex justify-content-center align-items-center mt-4"
+            style="
+              border-top: 15px solid #000;
+              border-left: 15px solid #000;
+              border-right: 15px solid #000;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+              background-color: #d5e1ef;
+              min-height: 0;
+            "
+          >
+            <div class="image-wrapper position-relative">
+              <img
+                src="design/desktop-design.jpg"
+                alt="Blog preview"
+                class="img-fluid w-100"
+                style="object-fit: contain"
+              />
+              <div
+                class="image-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+            </div>
           </section>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div
+          class="col-lg-4 bg-custom-light d-flex flex-column justify-content-center p-5"
+        >
+          <!-- Section 1 -->
+          <div class="mb-4">
+            <h2 class="h6 mb-2 ms-5">Design System &rarr;</h2>
+            <div class="d-flex">
+              <img
+                src="assets/circular.svg"
+                alt="circular design"
+                class="me-3"
+                style="width: 32px; height: 32px"
+              />
+              <p class="mb-0 text-muted">
+                The design system contains all the information for reusable
+                components and styles. It shows colors, typography styles, and
+                components, including various component states if they're
+                interactive.
+              </p>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <hr class="my-3 border-secondary-subtle" />
+
+          <!-- Section 2 -->
+          <div>
+            <h2 class="h6 mb-2 ms-5">Designs &rarr;</h2>
+            <div class="d-flex">
+              <img
+                src="assets/design.svg"
+                alt="square design"
+                class="me-3"
+                style="width: 32px; height: 32px"
+              />
+              <p class="mb-0 text-muted">
+                The high-fidelity designs help you build responsive, accessible
+                projects. Aim for precision rather than pixel-perfect replicas.
+                For guidance, see Josh Comeau's "Chasing the Pixel-Perfect
+                Dream."
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-</body>
+  </body>
 </html>
